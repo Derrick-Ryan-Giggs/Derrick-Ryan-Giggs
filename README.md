@@ -1,15 +1,13 @@
-- 👋 Hi, I’m Derrick-Ryan-Giggs, I'm a frontend developer in training who is passionate about creating beautiful and functional web applications. My focus is on building clean, responsive, and user-friendly interfaces.
+Hi, I’m Derrick-Ryan-Giggs, a frontend developer in training passionate about building clean, responsive, and user-friendly web applications.
 
-- 👀 I’m interested in Frontend Development ,User Experience Design ,Web Accessibility ,JavaScript Frameworks and Libraries.
+Interests: Frontend Development, User Experience Design, Web Accessibility, JavaScript Frameworks, and Libraries.
 
-- 🌱 I’m currently learning JavaScript (actively building projects) ,Tailwind CSS (soon) ,React (soon), Pursuing a Computer Science degree at the University of the People.
+Currently Learning: React, Node.js, and actively building projects while pursuing a Computer Science degree at the University of the People.
 
-- 💞️ I’m looking to collaborate on Open-source frontend projects ,Web applications that solve real-world problems ,Anything involving HTML, CSS, JavaScript, and React.
+Looking to Collaborate: Open-source frontend projects, web applications solving real-world problems, and anything involving HTML, CSS, JavaScript, React, or Node.js.
 
-- 📫 How to reach me Email:  [gderrick768@gmail.com]  .
+Contact: [gderrick768@gmail.com]
 
-- 😄 Pronouns: He/Him.
-
-- ⚡ Fun fact: I’m a big believer in continuous learning and love exploring new technologies and tools in web development.
+Fun Fact: I’m passionate about continuous learning and exploring new web development technologies.
 
 
