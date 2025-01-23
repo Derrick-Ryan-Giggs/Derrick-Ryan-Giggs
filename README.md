@@ -2,7 +2,7 @@ Hi, I’m Derrick-Ryan-Giggs, a frontend developer in training passionate about 
 
 💻 Interests: Frontend Development, User Experience Design, Web Accessibility, JavaScript Frameworks, and Libraries.
 
-🌱 Currently Learning: React, Node.js, and actively building projects while pursuing a Computer Science degree at the University of the People.
+🌱 Currently Learning: React, Node.js, and actively building projects.
 
 🤝 Looking to Collaborate: Open-source frontend projects, web applications solving real-world problems, and anything involving HTML, CSS, JavaScript, React, or Node.js.
 
