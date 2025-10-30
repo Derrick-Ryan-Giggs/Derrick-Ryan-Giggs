@@ -10,3 +10,4 @@ Hi, I’m Derrick-Ryan-Giggs, a frontend developer in training passionate about 
 
 ⚡ Fun Fact: I’m passionate about continuous learning and exploring new web development technologies.
 
+[![CoderLegion](https://coderlegion.com/cl_badge_logo1.png) Join the CoderLegion Community](https://coderlegion.com/user/Derrick+Ryan)
