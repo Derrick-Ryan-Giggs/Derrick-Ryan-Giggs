@@ -20,7 +20,7 @@ I'm a **data engineering** enthusiast focused on building data pipelines and cre
 
 ## 🛠️ Skills & Tools
 
-**Languages:** Python, SQL, JavaScript  
+**Languages:** Python, SQL, Java, JavaScript 
 **Data Engineering:** ETL pipelines, Data warehousing  
 **Databases:** PostgreSQL, MySQL, MySQL HeatWave, Oracle, Oracle Autonomous Database  
 **Visualization:** Tableau, Power BI, Amazon QuickSight, Matplotlib, Seaborn  
