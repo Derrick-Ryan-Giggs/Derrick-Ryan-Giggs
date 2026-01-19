@@ -1,4 +1,4 @@
-# Hi there! 👋 I'm Derrick Ryan Giggs
+# Hi there 👋 I'm Derrick Ryan Giggs
 
 ## 📊 About Me
 
