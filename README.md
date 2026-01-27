@@ -2,7 +2,7 @@
 
 <div align="center">
   
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Data+Engineering+Enthusiast+%F0%9F%9A%80;Building+Scalable+Data+Pipelines+%F0%9F%94%A7;Turning+Data+into+Insights+%F0%9F%93%8A;Open+to+Collaborations+%F0%9F%A4%9D)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Data+Engineering+Enthusiast+%F0%9F%9A%80;Building+Data+Pipelines+%F0%9F%94%A7;Turning+Data+into+Insights+%F0%9F%93%8A;Creating+Compelling+Visualizations+%F0%9F%93%88)](https://git.io/typing-svg)
 
 </div>
 
@@ -10,31 +10,15 @@
 
 ## 🚀 About Me
 
-```python
-class DataEngineer:
-    def __init__(self):
-        self.name = "Derrick Ryan Giggs"
-        self.role = "Data Engineering Enthusiast"
-        self.passions = ["Building Data Pipelines", "Creating Visualizations", "Storytelling with Data"]
-        self.currently_learning = ["Apache Airflow", "Data Warehousing", "Cloud Data Platforms"]
-    
-    def say_hi(self):
-        print("Thanks for dropping by! Let's build something amazing with data!")
-
-me = DataEngineer()
-me.say_hi()
-```
-
-💡 **Fun Fact:** I love turning raw data into actionable insights through clean pipelines and compelling visualizations!
+I'm a **data engineering** enthusiast focused on building data pipelines and creating insightful visualizations to tell compelling stories with data.
 
 ---
 
 ## 🔭 What I'm Currently Working On
 
-- 🛠️ Building robust **ETL/ELT data pipelines**
-- 📊 Creating interactive **data visualizations and dashboards**
-- 🗄️ Designing efficient **database architectures** and **data warehouses**
-- 🌊 Orchestrating workflows with **Apache Airflow** and **Kestra**
+- 🛠️ Building data pipelines and ETL processes
+- 📊 Creating data visualizations and dashboards
+- 🗄️ Working with databases and data warehousing
 
 ---
 
@@ -43,20 +27,30 @@ me.say_hi()
 <table>
   <tr>
     <td align="center" width="200">
+      <img src="https://img.icons8.com/color/96/000000/data-configuration.png" width="48" height="48" alt="Data Engineering" />
+      <br><b>Data Engineering fundamentals</b>
+    </td>
+    <td align="center" width="200">
       <img src="https://img.icons8.com/color/96/000000/python.png" width="48" height="48" alt="Python" />
-      <br>Python & Pandas
+      <br><b>Python (Pandas, NumPy)</b>
     </td>
     <td align="center" width="200">
       <img src="https://img.icons8.com/color/96/000000/sql.png" width="48" height="48" alt="SQL" />
-      <br>SQL & Databases
+      <br><b>SQL & Database Management</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="200">
+      <img src="https://img.icons8.com/color/96/000000/tableau-software.png" width="48" height="48" alt="Visualization" />
+      <br><b>Data Visualization</b>
     </td>
     <td align="center" width="200">
       <img src="https://img.icons8.com/color/96/000000/apache-airflow.png" width="48" height="48" alt="Airflow" />
-      <br>Apache Airflow
+      <br><b>Apache Airflow & ETL</b>
     </td>
     <td align="center" width="200">
-      <img src="https://img.icons8.com/color/96/000000/tableau-software.png" width="48" height="48" alt="Tableau" />
-      <br>Data Visualization
+      <img src="https://img.icons8.com/fluency/96/000000/workflow.png" width="48" height="48" alt="Workflows" />
+      <br><b>Workflow Orchestration</b>
     </td>
   </tr>
 </table>
@@ -71,27 +65,28 @@ me.say_hi()
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-### Data Engineering & ETL
-![Apache Airflow](https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+### Data Engineering
+![ETL](https://img.shields.io/badge/ETL_Pipelines-FF6B6B?style=for-the-badge&logo=apache-airflow&logoColor=white)
+![Data Warehousing](https://img.shields.io/badge/Data_Warehousing-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 
 ### Databases
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![MySQL HeatWave](https://img.shields.io/badge/MySQL_HeatWave-00758F?style=for-the-badge&logo=mysql&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle Autonomous](https://img.shields.io/badge/Oracle_Autonomous_DB-C74634?style=for-the-badge&logo=oracle&logoColor=white)
 
-### Data Visualization
+### Visualization
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Amazon QuickSight](https://img.shields.io/badge/Amazon_QuickSight-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white)
 ![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-### Cloud & Tools
-![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+### Other Tools
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
 
 ---
 
@@ -131,21 +126,10 @@ me.say_hi()
 
 ## 🤝 Open to Collaborate On
 
-- 🔄 **Data Engineering Projects** - Building scalable data pipelines
-- 🛠️ **ETL/ELT Development** - Creating efficient data workflows
-- 📊 **Data Visualization** - Crafting insightful dashboards
-- 🌟 **Open-Source Data Initiatives** - Contributing to the data community
-
----
-
-## 💼 Featured Projects
-
-<div align="center">
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=CoderLegion&repo=your-project-name&theme=tokyonight)](https://github.com/CoderLegion/your-project-name)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=CoderLegion&repo=another-project&theme=tokyonight)](https://github.com/CoderLegion/another-project)
-
-</div>
+- 🔄 **Data engineering projects**
+- 🛠️ **ETL pipeline development**
+- 📊 **Data visualization and dashboard projects**
+- 🌟 **Open-source data initiatives**
 
 ---
 
@@ -154,24 +138,25 @@ me.say_hi()
 <div align="center">
 
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:derrickryangiggs@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CoderLegion)
+
+**📧 Email:** derrickryangiggs@gmail.com
 
 </div>
 
 ---
 
-## 🎯 2025 Goals
+## 💡 Fun Fact
 
-- [ ] Complete Data Engineering Zoomcamp
-- [ ] Build 5+ end-to-end data pipeline projects
-- [ ] Master Apache Airflow & Kestra
-- [ ] Contribute to 10+ open-source projects
-- [ ] Create a comprehensive data engineering portfolio
+I love turning raw data into actionable insights through clean pipelines and compelling visualizations! 🚀📊
 
 ---
 
 <div align="center">
+
+[![CoderLegion](https://coderlegion.com/cl_badge_logo1.png)](https://coderlegion.com/user/Derrick+Ryan)
+
+---
 
 ### 💭 Quote of the Day
 ![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
@@ -180,13 +165,6 @@ me.say_hi()
 
 ### 👀 Profile Views
 ![Visitor Count](https://profile-counter.glitch.me/CoderLegion/count.svg)
-
----
-
-### ⚡ Recent Activity
-
-<!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
 
 ---
 
