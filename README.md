@@ -35,7 +35,10 @@ With a passion for modern data stack tooling, I specialize in building productio
 ### Orchestration & Infrastructure
 
 ![Airflow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apache-airflow&logoColor=white)
+![Kestra](https://img.shields.io/badge/Kestra-0066FF?style=for-the-badge&logo=kestra&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![dbt](https://img.shields.io/badge/dbt-FF6B35?style=for-the-badge&logo=dbt&logoColor=white)
 
 *Orchestrating reliable, production-grade data workflows.*
 
@@ -44,9 +47,9 @@ With a passion for modern data stack tooling, I specialize in building productio
 ## **Engineering Practices & Tooling**
 
 - **Data Ingestion**: **dlt (data load tool)**, PySpark
-- **Orchestration & Workflow**: **Apache Airflow**, Prefect
+- **Orchestration & Workflow**: **Apache Airflow**, **Kestra**, Prefect
 - **Data Transformation**: **dbt**, SQL
-- **Infrastructure & Deployment**: **Docker**, Terraform
+- **Infrastructure & Deployment**: **Docker**, **Terraform**
 - **CI/CD**: **GitHub Actions**
 - **Version Control**: **Advanced Git**
 - **Monitoring & Reliability**: Structured logging, pipeline health checks, alerting
