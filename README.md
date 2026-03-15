@@ -1,6 +1,6 @@
 # Derrick Ryan Giggs
 
-**Data Engineer |Technical Writer | Building Scalable, Reliable Data Pipelines | Cloud & Workflow Automation**
+**Data Engineer | Technical Writer | Building Scalable, Reliable Data Pipelines | Cloud & Workflow Automation**
 
 With a passion for modern data stack tooling, I specialize in building production-ready data pipelines using **Python** and emerging frameworks like **dlt (data load tool)**. I focus on clean, maintainable ingestion pipelines, orchestration, and cloud-native data workflows.
 
