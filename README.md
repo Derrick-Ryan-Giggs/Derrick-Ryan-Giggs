@@ -65,6 +65,34 @@ With a passion for modern data stack tooling, I specialize in building productio
 
 ---
 
+### Kenya Health Facility Mapping Pipeline
+
+*An open-source data lakehouse mapping healthcare inequality across Kenya's 47 counties — built end-to-end with Apache Airflow, MinIO, Apache Iceberg, Trino, dbt Core, and Apache Superset, all running in Docker on a local machine.*
+
+**Impact**: Surfaces facility-to-population ratios, service gap analysis (maternity, ART, TB, emergency), and intra-city inequality (Starehe: 7.23 per 10k vs. Embakasi North: 0.62 per 10k) across all 47 counties and 17 Nairobi sub-counties — automatically refreshed monthly via Airflow orchestration.
+
+**Key Challenge**: Superset's built-in Kenya map only has 8 pre-2013 provincial boundaries, not the current 47 counties. Solved by switching to `deck.gl Polygon` with a custom virtual dataset that wraps raw GeoJSON geometry from `stg_geodata` into full Feature objects, with explicit CASE mapping for three county name mismatches across source datasets.
+
+**Key Findings**:
+- Bungoma is Kenya's most underserved county (1.88 facilities/10k, 1.67M people), needing 21 additional facilities to reach the 3/10k baseline
+- Samburu has the only critical TB gap nationally: 1 TB facility for 310,327 people
+- Within Nairobi alone, an 11x density gap exists between the most and least served sub-counties
+
+**Architecture**:
+- Ingestion: KMHFR API (20,391 facilities, 680 pages) + KNBS Census + HDX GeoJSON → Airflow (CeleryExecutor + Redis) → MinIO (S3-compatible raw layer)
+- Storage & catalog: Apache Iceberg (ACID tables, time travel) + REST Catalog (SQLite-backed, persists across restarts) + MinIO Parquet files
+- Transformation: dbt Core 1.8.0 + dbt-trino → staging views + 4 mart tables + SCD2 snapshot (30 data tests pass)
+- Query engine: Trino 480 (federated SQL over Iceberg/MinIO)
+- Visualization: Apache Superset 5.0.0 — 8 charts including deck.gl polygon choropleth, facility density bar charts, service gap tables, and Nairobi sub-county drill-down
+- IaC: OpenTofu (MinIO bucket provisioning)
+- Deployment: Docker Compose (13 containers) + Cloudflare Tunnel for live public sharing
+
+**Stack**: Apache Airflow 2.9.2 · MinIO · Apache Iceberg · Trino 480 · dbt Core 1.8.0 · Apache Superset 5.0.0 · OpenTofu · Redis · PostgreSQL · Docker · Python · Shell
+
+**Repo**: [kenya-health-pipeline](https://github.com/Derrick-Ryan-Giggs/kenya-health-pipeline)
+
+---
+
 ### CoinPulse — Real-Time Crypto Analytics Pipeline
 
 *A production-grade hybrid streaming and batch cryptocurrency analytics pipeline on GCP, tracking BTC, ETH, SOL, BNB, and ADA in real time at near-zero infrastructure cost (~$0.01/month).*
@@ -158,4 +186,4 @@ Open to collaborating on interesting data infrastructure projects and discussion
 
 ---
 
-*Last Updated: 2026-04-24*
+*Last Updated: 2026-06-13*
