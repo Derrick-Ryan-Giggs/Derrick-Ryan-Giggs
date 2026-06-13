@@ -128,7 +128,7 @@ With a passion for modern data stack tooling, I specialize in building productio
 
 **Stack**: Python · Apache Airflow · dbt Cloud · BigQuery · GCS · PySpark · Docker · Looker Studio
 
-**Repo**: [sovereign-debt-observatory](https://github.com/Derrick-Ryan-Giggs/sovereign-debt-observatory)
+**Live Dashboard**: [datastudio.google.com](https://datastudio.google.com/reporting/7fc18e9e-a5c6-4616-b920-b5b4bddf2264) | **Repo**: [sovereign-debt-observatory](https://github.com/Derrick-Ryan-Giggs/sovereign-debt-observatory)
 
 ---
 
@@ -148,7 +148,7 @@ With a passion for modern data stack tooling, I specialize in building productio
 
 **Stack**: Python · Kestra · dbt Cloud · BigQuery · GCS · Terraform · Looker Studio · Docker
 
-**Repo**: [tech-ecosystem-observatory](https://github.com/Derrick-Ryan-Giggs/tech-ecosystem-observatory)
+**Live Dashboard**: [lookerstudio.google.com](https://lookerstudio.google.com/reporting/b1620cae-97cb-4911-82b8-dd0c46ee8acb) | **Repo**: [tech-ecosystem-observatory](https://github.com/Derrick-Ryan-Giggs/tech-ecosystem-observatory)
 
 ---
 
