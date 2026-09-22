@@ -65,6 +65,29 @@ With a passion for modern data stack tooling, I specialize in building productio
 
 ---
 
+### Safaricom Financial RAG
+
+*A production-grade financial Q&A system over 19 years of Safaricom annual reports, routing questions between a SQL path (BigQuery mart tables via dbt) and a RAG path (hybrid minsearch + Qdrant vector search), deployed on Cloud Run at near-zero infrastructure cost.*
+
+**Impact**: Answers natural-language questions about Safaricom's financials by intelligently routing between structured SQL queries and hybrid retrieval over 19 years of annual report PDFs, backed by a 6,219-question ground truth set and a daily evaluation loop for continuous quality tracking.
+
+**Key Challenge**: Diagnosing and fixing a chain of subtle production bugs — a router silently returning empty strings because a reasoning model was burning its token budget on hidden chain-of-thought, embeddings duplication, a breaking Qdrant API change, and non-deterministic SQL results — while hardening the app with abuse protection (question length caps, per-session rate limiting via Firestore) and CI (pytest + pip-audit on every push).
+
+**Key Findings**: Latest full evaluation run (1,000 questions, v4): 12.0% refusal rate, 72.0% relevant among attempted answers, 22.0% not relevant, with alpha=0.6 confirmed as the optimal hybrid-search weighting at k=20.
+
+**Architecture**:
+- Routing: Groq-hosted gpt-oss-20b classifies each question to the SQL or RAG path
+- SQL path: BigQuery mart tables (via dbt) queried directly for structured financial data
+- RAG path: hybrid minsearch + Qdrant Cloud vector search over embedded annual report PDFs, answered by Groq-hosted gpt-oss-120b with token-by-token streaming
+- Observability: a separate rag-dashboard Cloud Run service reads Firestore-backed traces and user feedback
+- Infrastructure: Cloud Run (africa-south1), Firestore (chat history, rate limiting, TTL cleanup), GCS (public PDF hosting), Artifact Registry, GitHub Actions CI/CD
+
+**Stack**: Python · Streamlit · Qdrant Cloud · BigQuery · dbt · Groq · Cloud Run · Firestore · Docker · GitHub Actions
+
+**Live App**: [rag-app](https://rag-app-1003744998459.africa-south1.run.app) | **Live Dashboard**: [rag-dashboard](https://rag-dashboard-1003744998459.africa-south1.run.app/) | **Repo**: [safaricom-financial-rag](https://github.com/Derrick-Ryan-Giggs/safaricom-financial-rag)
+
+---
+
 ### Kenya Health Facility Mapping Pipeline
 
 *An open-source data lakehouse mapping healthcare inequality across Kenya's 47 counties — built end-to-end with Apache Airflow, MinIO, Apache Iceberg, Trino, dbt Core, and Apache Superset, all running in Docker on a local machine.*
@@ -90,6 +113,27 @@ With a passion for modern data stack tooling, I specialize in building productio
 **Stack**: Apache Airflow 2.9.2 · MinIO · Apache Iceberg · Trino 480 · dbt Core 1.8.0 · Apache Superset 5.0.0 · OpenTofu · Redis · PostgreSQL · Docker · Python · Shell
 
 **Repo**: [kenya-health-pipeline](https://github.com/Derrick-Ryan-Giggs/kenya-health-pipeline)
+
+---
+
+### Safaricom Intelligence
+
+*An upstream dbt Cloud/BigQuery/Airflow ELT pipeline converting Safaricom PLC's public financial disclosure PDFs (FY2014-FY2026) into a versioned, queryable BigQuery dataset — feeding both the Safaricom Financial RAG app and a three-page Looker Studio dashboard.*
+
+**Impact**: Produces a fully green, end-to-end dbt pipeline (all 44 nodes passing) that powers a three-page Looker Studio "Safaricom Financial Intelligence Dashboard" (M-PESA Intelligence, Revenue Mix, Kenya vs Ethiopia) and serves as the structured-data backbone for the downstream RAG app's SQL query path.
+
+**Key Challenge**: Extensive primary-source fact-checking to correct real data errors baked into the source disclosures — cross-verifying figures against press releases, results booklets, and financial news (Reuters, CNBC, LSE, Bloomberg) before trusting any extracted number — alongside resolving BigQuery schema drift, dbt Fusion YAML syntax changes, and a hardcoded dbt Cloud API host that was silently breaking scheduled runs.
+
+**Architecture**:
+- Ingestion: pdfplumber extraction of Safaricom's public financial disclosure PDFs → Airflow DAGs
+- Infrastructure: Terraform-provisioned BigQuery datasets
+- Transformation: dbt Cloud (Fusion) — 44 nodes, staging → mart layer (`dbt_rgiggs_mart`)
+- Visualization: three-page Looker Studio dashboard (M-PESA Intelligence, Revenue Mix, Kenya vs Ethiopia)
+- Downstream: feeds the Safaricom Financial RAG app's SQL path
+
+**Stack**: Python · pdfplumber · Apache Airflow · dbt Cloud (Fusion) · BigQuery · Terraform · Looker Studio
+
+**Live Dashboard**: [datastudio.google.com](https://datastudio.google.com/reporting/d1679099-7abb-4d6e-bc15-aa8beb9dfa6c) | **Repo**: [safaricom-intelligence](https://github.com/Derrick-Ryan-Giggs/safaricom-intelligence)
 
 ---
 
@@ -186,4 +230,4 @@ Open to collaborating on interesting data infrastructure projects and discussion
 
 ---
 
-*Last Updated: 2026-06-13*
+*Last Updated: 2026-09-22*
